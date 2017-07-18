@@ -15,6 +15,11 @@
     margin-top: 20px;
 }
 
+h3{
+  font-size: 1em;
+    line-height: 1em;
+}
+
 .menubutton{
   background: #1b1b1b;
     width: 100%;
@@ -22,4 +27,35 @@
     color: white !important;
     font-size: 1.3em;
     font-weight: 300;
+}
+
+.search{
+        height: 50px;
+    padding-left: 10px;
+    width: 250px;
+    }
+
+
+    #login{
+  height: 100vh;
+  width: 100vw;
+  background:url('../img/loginbg.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: cover; 
+}
+
+.logincontainer{
+  background: white;
+  padding: 50px;
+  border-radius:10px;
+  width: 400px; 
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.logincontainer h2{
+  font-weight: 300;
+  color:#1b1b1b;
 }
