@@ -1,0 +1,61 @@
+<div  layout="column" style="height:100vh;" ng-cloak>
+
+  <section layout="row" flex>
+
+    <md-sidenav
+        class="md-sidenav-left"
+        md-component-id="left"
+        md-is-locked-open="$mdMedia('gt-md')"
+        md-whiteframe="4">
+
+      <md-toolbar class="md-theme-indigo" style="background: #1b1b1b;">
+        <h1 class="md-toolbar-tools th" style="text-align: center;">Quench Admin</h1>
+      </md-toolbar>
+      <md-content layout-padding style="background: #1b1b1b;height: 100%;" >
+       
+        <md-button  class="md-primary menubutton" style="background: #1b1b1b;width: 100%;text-align: left;"  ui-sref="home.users">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            Users
+          </md-button>
+
+           <md-button  class="md-primary menubutton" style="background: #1b1b1b;width: 100%;text-align: left;" ui-sref="home.retailers" >
+            <i class="fa fa-users" aria-hidden="true"></i>
+            Retailers
+          </md-button>
+
+           <md-button  class="md-primary menubutton" style="background: #1b1b1b;width: 100%;text-align: left;" ng-click="logout()" >
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+            Logout
+          </md-button>
+       
+      </md-content>
+
+    </md-sidenav>
+
+    <md-content flex layout-padding>
+
+      <div layout="column" layout-align="top center">
+
+              <ui-view></ui-view>
+
+        <div>
+          <md-button ng-click="toggle()" class="md-primary ham" hide-gt-md >
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </md-button>
+        </div>
+
+        <div>
+         
+        </div>
+      </div>
+
+      <div flex></div>
+
+    </md-content>
+
+  
+
+  </section>
+
+</div>
+

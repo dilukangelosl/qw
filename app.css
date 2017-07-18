@@ -1,0 +1,25 @@
+.ham{
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  padding: 5px;
+}
+
+.ham i {
+  font-size: 2.1em;
+  color:#1b1b1b;
+}
+.th{
+      text-align: center;
+    display: block;
+    margin-top: 20px;
+}
+
+.menubutton{
+  background: #1b1b1b;
+    width: 100%;
+    text-align: left;
+    color: white !important;
+    font-size: 1.3em;
+    font-weight: 300;
+}

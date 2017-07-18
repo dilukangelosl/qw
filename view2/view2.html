@@ -1,0 +1,51 @@
+<style>
+
+#login{
+  height: 100vh;
+  width: 100vw;
+  background:url('../img/loginbg.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: cover; 
+}
+
+.logincontainer{
+  background: white;
+  padding: 50px;
+  border-radius:10px;
+  width: 400px; 
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.logincontainer h2{
+  font-weight: 300;
+  color:#1b1b1b;
+}
+
+</style>
+
+
+<section id="login">
+
+  <div class="logincontainer" layout="column">
+    
+    <h2>Quench Admin</h2>
+
+       <md-input-container>
+        <label>Username</label>
+        <input ng-model="user.email">
+      </md-input-container>
+
+      <md-input-container>
+        <label>Password</label>
+        <input ng-model="user.password" type="password">
+      </md-input-container>
+
+       <md-button class="md-raised md-warn" ng-click="login(user.email,user.password)">Login</md-button>
+<md-progress-linear md-mode="indeterminate" class="md-warn" ng-show="loginloader"></md-progress-linear>
+
+  </div>
+
+</section>
